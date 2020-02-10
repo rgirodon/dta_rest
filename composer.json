@@ -1,0 +1,13 @@
+{
+    "name": "dta/slim",
+    "authors": [
+        {
+            "name": "rgirodon",
+            "email": "remy.girodon@gmail.com"
+        }
+    ],
+    "require": {
+        "slim/psr7": "^1.0",
+        "slim/slim": "^4.4"
+    }
+}
