@@ -52,12 +52,12 @@ $app->post('/slim/users', function (Request $request, Response $response, array 
 
     $payload = json_encode($data);
 
-    $newResponse = $response->withHeader('Content-Type', 'application/json');
+    $response = $response->withHeader('Content-Type', 'application/json');
     
-    $newResponse->getBody()
-                ->write($payload);
+    $response->getBody()
+            ->write($payload);
 
-    return $newResponse;
+    return $response;
 });
 
 $app->run();
